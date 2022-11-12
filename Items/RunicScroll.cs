@@ -45,10 +45,11 @@
             {
                 StationType = Recipe.CraftingType.Alchemy,
                 Results = new List<SL_Recipe.ItemQty>() {
-                    new SL_Recipe.ItemQty() {Quantity = 1, ItemID = IDs.runicScrollID},
+                    new SL_Recipe.ItemQty() {Quantity = 3, ItemID = IDs.runicScrollID},
                 },
                 Ingredients = new List<SL_Recipe.Ingredient>() {
                     new SL_Recipe.Ingredient() { Type = RecipeIngredient.ActionTypes.AddSpecificIngredient, Ingredient_ItemID = IDs.manaStoneID},
+                    new SL_Recipe.Ingredient() { Type = RecipeIngredient.ActionTypes.AddSpecificIngredient, Ingredient_ItemID = IDs.linenClothID},
                     new SL_Recipe.Ingredient() { Type = RecipeIngredient.ActionTypes.AddSpecificIngredient, Ingredient_ItemID = IDs.linenClothID},
                 },
                 UID = newUID
