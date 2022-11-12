@@ -24,7 +24,7 @@ assemble:
 	cp resources/textures/quiverDisplayRunicScroll.png      public/$(sideloaderpath)/Texture2D/
 	cp resources/textures/tex_men_arrowQuiverIndicator.png  public/$(sideloaderpath)/Texture2D/
 
-	cp resources/assetbundles/scrollquiver                  public/$(sideloaderpath)/AssetBundles/
+	cp resources/unity/RunicSCrolls/Assets/AssetBundles/scrollquiver     public/$(sideloaderpath)/AssetBundles/
 	
 publish:
 	make assemble
