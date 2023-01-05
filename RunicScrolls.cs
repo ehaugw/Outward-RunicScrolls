@@ -7,21 +7,22 @@
     using UnityEngine;
     using System.Linq;
     using System.Collections.Generic;
+    using System.IO;
 
     [BepInDependency("com.sinai.SideLoader", BepInDependency.DependencyFlags.HardDependency)]
     [BepInPlugin(GUID, NAME, VERSION)]
     public class RunicScrolls : BaseUnityPlugin
     {
         public const string GUID = "com.ehaugw.runicscrolls";
-        public const string VERSION = "4.0.1";
+        public const string VERSION = "4.0.2";
         public const string NAME = "Runic Scrolls";
+        public static string ModFolderName = Directory.GetParent(typeof(RunicScrolls).Assembly.Location).Name.ToString();
 
         public static Sprite scrollSprite;
         public static Sprite arrowSprite;
 
         public Item runicScrollInstance;
         public Item runicScrollRecipeInstance;
-        public const string sideloaderFolder = "RunicScrolls";
 
         internal void Awake()
         {
@@ -54,8 +55,8 @@
         {
             runicScrollInstance = RunicScroll.MakeItem();
             runicScrollRecipeInstance = RunicScroll.MakeRecipes();
-            scrollSprite = CustomTextures.CreateSprite(SL.GetSLPack("RunicScrolls").Texture2D["quiverDisplayRunicScroll"]);
-            arrowSprite = CustomTextures.CreateSprite(SL.GetSLPack("RunicScrolls").Texture2D["tex_men_arrowQuiverIndicator"]);
+            scrollSprite = CustomTextures.CreateSprite(SL.GetSLPack(RunicScrolls.ModFolderName).Texture2D["quiverDisplayRunicScroll"]);
+            arrowSprite = CustomTextures.CreateSprite(SL.GetSLPack(RunicScrolls.ModFolderName).Texture2D["tex_men_arrowQuiverIndicator"]);
         }
 
         public static bool IsRune(Item item)

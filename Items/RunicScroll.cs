@@ -23,10 +23,10 @@
                 TwoHandType = Equipment.TwoHandedType.None,
                 WeaponType = Weapon.WeaponType.Arrow,
 
-                ItemVisuals = new SL_ItemVisual() { Prefab_Name = "scrollquiver_Prefab", Prefab_AssetBundle = "scrollquiver", Prefab_SLPack = RunicScrolls.sideloaderFolder },
-                SpecialItemVisuals = new SL_ItemVisual() { Prefab_Name = "scrollquiverequipped_Prefab", Prefab_AssetBundle = "scrollquiver", Prefab_SLPack = RunicScrolls.sideloaderFolder },
+                ItemVisuals = new SL_ItemVisual() { Prefab_Name = "scrollquiver_Prefab", Prefab_AssetBundle = "scrollquiver", Prefab_SLPack = RunicScrolls.ModFolderName },
+                SpecialItemVisuals = new SL_ItemVisual() { Prefab_Name = "scrollquiverequipped_Prefab", Prefab_AssetBundle = "scrollquiver", Prefab_SLPack = RunicScrolls.ModFolderName },
 
-                SLPackName = RunicScrolls.sideloaderFolder,
+                SLPackName = RunicScrolls.ModFolderName,
                 SubfolderName = SubfolderName
             };
             myitem.ApplyTemplate();
