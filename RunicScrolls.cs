@@ -13,7 +13,7 @@
     public class RunicScrolls : BaseUnityPlugin
     {
         public const string GUID = "com.ehaugw.runicscrolls";
-        public const string VERSION = "4.0.0";
+        public const string VERSION = "4.0.1";
         public const string NAME = "Runic Scrolls";
 
         public static Sprite scrollSprite;
